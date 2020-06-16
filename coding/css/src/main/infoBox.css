@@ -1,0 +1,7 @@
+/* infoBox.css */
+/* 공지와 이벤트 안내 영역 */
+
+#infoBox{
+	width: 100%; height: auto; min-height:100px;
+	background-color: #fff;
+}

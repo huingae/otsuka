@@ -1,0 +1,32 @@
+/* viewBox.css */
+/* 메인광고영역 */
+
+#viewBox{
+	position: relative;
+	width: 100%; height: auto; min-height: 480px;
+	background-color: #cdcdcd;
+	overflow: hidden;
+}
+
+.view_area{
+	width: 400%; height: 480px;
+}
+
+.view_area div{
+	width: 25%; height: 100%;
+}
+
+.view_01{
+	background-image: url('../../../img/banner/view_img01.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.view_area p{
+	display: block;
+	width: auto; height: auto;
+	margin: auto;
+	font-size: 3rem;
+	color: #fff;
+}

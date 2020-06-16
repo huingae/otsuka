@@ -1,0 +1,6 @@
+/* serviceBox.css */
+/* 대량구매 서비스 */
+#serviceBox{
+	width: 100%; height: auto; min-height: 170px;
+	background-color: #696969;
+}

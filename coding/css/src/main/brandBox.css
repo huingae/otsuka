@@ -1,0 +1,7 @@
+/* brandBox.css */
+/* 제품소개영역 */
+
+#brandBox{
+	width: 100%; height: auto; min-height: 400px;
+	background-color: #cfcfcf;
+}

@@ -1,0 +1,6 @@
+/* recruitBox.css */
+/* 채용공고 */
+#recruitBox{
+	width: 100%; height: auto; min-height:120px;
+	background-color: #333;
+}

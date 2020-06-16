@@ -1,0 +1,7 @@
+/* conBox.css */
+/* 회사소개영역 */
+
+#conBox{
+	width: 100%; height: auto; min-height: 600px;
+	background-color: #777;
+}

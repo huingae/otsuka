@@ -1,0 +1,7 @@
+/* storyBox.css */
+/* 오츠카 스토리 소개 영역 */
+
+#storyBox{
+	width: 100%; height: auto; min-height:560px;
+	background-color: #ccc;
+}
