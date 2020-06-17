@@ -12,5 +12,44 @@
 	width: 100%; max-width: 1024px;
 	height: 100%;
 	margin: auto;
+	background-color: #cfcfcf;
+}
+.con_text{
+	width: 100%; height: auto;
+	background-color: #fff;
+}
+
+.con_text p{
+	font-size: 2rem;
+	text-align: right;
+	color: #696969;
+}
+
+.con_text em{
+	font-style: normal;
+	font-size: 4rem; font-size: 20vw;
+	font-weight: bold;
+	color: #696969;
+	text-transform: uppercase;
+}
+
+.con_content{
+	width: 100%; height: auto;
 	background-color: #333;
+}
+
+.con_content ul{
+	width: 100%; height:auto;
+}
+
+.con_content li{
+	float: left;
+	width: 40%; height: 100px;
+	background-color: #fff;
+}
+
+@media screen and (min-width: 600px){
+	.con_text em{
+		font-size: 7rem;
+	}
 }
