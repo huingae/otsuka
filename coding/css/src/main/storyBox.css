@@ -2,7 +2,7 @@
 /* 오츠카 스토리 소개 영역 */
 
 #storyBox{
-	width: 100%; height: auto; min-height:600px;
+	width: 100%; height: auto; 
 	background-color: #00a0c2;
 	padding-top: 160px; box-sizing: border-box;
 	background-image: url('../../../img/main/story_bg.png');
@@ -87,5 +87,19 @@
 	
 	.story_area h3{
 		font-size: 7.975rem;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.story_area{
+		width: 100%; max-width: 1024px;
+		height: auto;
+		margin: auto;
+	}
+
+	.health>div{
+		float: left;
+		width: 463px; height: 300px;
+		background-color: #333;
 	}
 }
