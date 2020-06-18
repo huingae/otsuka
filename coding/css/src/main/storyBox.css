@@ -2,6 +2,90 @@
 /* 오츠카 스토리 소개 영역 */
 
 #storyBox{
-	width: 100%; height: auto; min-height:560px;
-	background-color: #ccc;
+	width: 100%; height: auto; min-height:600px;
+	background-color: #00a0c2;
+	padding-top: 160px; box-sizing: border-box;
+	background-image: url('../../../img/main/story_bg.png');
+	background-repeat: no-repeat;
+	background-position: center ;
+	background-size: cover;
+
+}
+
+.story_area{
+	position: relative;
+	width: 100%; max-width: 1024px;
+	height:auto; 
+	background-color: #fff;
+	margin:auto;
+	padding: 0 10px; box-sizing: border-box;
+}
+
+.story_area p{
+	position: absolute; top: -2.5rem; right: 0;
+	font-size: 2rem;
+	text-align: right;
+	color: #fff;
+	word-break: keep-all;
+	font-weight: 700;
+}
+
+.story_area h3{
+	font-style: normal;
+	font-size: 4rem; font-size: 20vw;
+	font-weight: bold;
+	color: #00a0c2;
+	text-transform: uppercase;
+}
+
+.story_area h4{
+	display: inline-block;
+	width: 100%; height: auto;
+	border-bottom: 2px solid #333;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+}
+
+.story_area >div >div{
+	margin-top:30px; margin-bottom: 30px;
+}
+
+.health{
+	width: 100%; height: auto;
+}
+
+.health>div{
+	float: left;
+	width: 140px; height: 100px;
+	width: 43.75vw; height: 31.25vw;
+	background-color: #333;
+	margin-right: 20px; margin-right: 6.25vw;
+}
+
+.health>div:last-child{
+	margin-right: 0;
+}
+
+.blue{
+	width: 100%; height: auto;
+}
+
+.blue>div{
+	width: 300px; height: 130px;
+	width: 93.75vw; height: 40.625vw;
+	background-color: #333;
+	margin: auto;
+}
+
+
+@media screen and (min-width: 640px){
+	.story_area{
+		width: 100%; max-width: 640px;
+		height: auto;
+		margin: auto;
+	}
+	
+	.story_area h3{
+		font-size: 7.975rem;
+	}
 }

@@ -3,29 +3,33 @@
 
 #conBox{
 	width: 100%; height: 100%; 
+	height: 187.5vw;
 	min-height: 600px;
+	max-height:900px;
 	background-color: #fff;
-	padding: 60px 10px; box-sizing: border-box;
+	padding: 60px 10px; 
+	padding:18.75vw 3.125vw; 
+	box-sizing: border-box;
 }
 
 .con_area{
-	width: 100%; max-width: 1024px;
-	height: 100%;
+	width: 100%;
+	height: auto;
 	margin: auto;
-	background-color: #cfcfcf;
 }
 .con_text{
 	width: 100%; height: auto;
-	background-color: #fff;
 }
 
 .con_text p{
 	font-size: 2rem;
 	text-align: right;
 	color: #696969;
+	word-break: keep-all;
+	font-weight: 700;
 }
 
-.con_text em{
+.con_text h3{
 	font-style: normal;
 	font-size: 4rem; font-size: 20vw;
 	font-weight: bold;
@@ -43,13 +47,63 @@
 }
 
 .con_content li{
-	float: left;
-	width: 40%; height: 100px;
-	background-color: #fff;
+	width: 140px; height: 170px;
+	width: 43.75vw; height: 53.125vw;
+	max-width: 230px; max-height: 280px;
+	background-color: #333;
 }
 
-@media screen and (min-width: 600px){
-	.con_text em{
-		font-size: 7rem;
+.con_01{
+	float: left;
+	margin: 0 20px 20px 0;
+	margin: 0 6.25vw 6.25vw 0;
+}
+.con_02{
+	float: right;
+	margin: 0 0 20px 0;
+	margin: 0 0 6.25vw 0;
+}
+.con_03{
+	float: left;
+	margin: 0 20px 0 0;
+	margin: 0 6.25vw 0 0;
+}
+.con_04{
+	float: right;
+}
+@media screen and (min-width: 640px){
+	.con_area{
+		width: 100%; max-width: 640px;
+		height: auto;
+		margin: auto;
+	}
+	
+	.con_text h3{
+		font-size: 7.975rem;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.con_area{
+		width: 100%; max-width: 1024px;
+		height: auto;
+		margin: auto;
+	}
+	
+
+	.con_content li{
+		float: left;
+		width: 220px; height: 300px;
+		background-color: #333;
+	}
+	
+	.con_01{
+		margin: 0;
+	}
+	.con_02{
+		margin: 0;
+	}
+	.con_03{
+		margin: 0;
 	}
 }
