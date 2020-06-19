@@ -3,7 +3,7 @@
 
 #storyBox{
 	width: 100%; height: auto; 
-	background-color: #00a0c2;
+	background-color: #053671;
 	padding-top: 160px; box-sizing: border-box;
 	background-image: url('../../../img/main/story_bg.png');
 	background-repeat: no-repeat;
@@ -18,7 +18,13 @@
 	height:auto; 
 	background-color: #fff;
 	margin:auto;
-	padding: 0 10px; box-sizing: border-box;
+	padding: 0 20px 60px 20px; box-sizing: border-box;
+}
+
+.story_area:before{
+	content: " ";
+	width: 100%; height: auto;
+	background-color: #fff;
 }
 
 .story_area p{
@@ -41,13 +47,14 @@
 .story_area h4{
 	display: inline-block;
 	width: 100%; height: auto;
-	border-bottom: 2px solid #333;
+	border-bottom: 2px solid #696969;
 	font-size: 1.5rem;
 	text-transform: capitalize;
+	margin-top:30px;
 }
 
 .story_area >div >div{
-	margin-top:30px; margin-bottom: 30px;
+	margin-top:30px; 
 }
 
 .health{
@@ -55,15 +62,29 @@
 }
 
 .health>div{
-	float: left;
 	width: 140px; height: 100px;
 	width: 43.75vw; height: 31.25vw;
 	background-color: #333;
-	margin-right: 20px; margin-right: 6.25vw;
 }
 
-.health>div:last-child{
-	margin-right: 0;
+.health_01{
+	float: left;
+	background-image: url('../../../img/main/healthstory_01.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.health_02{
+	float: right;
+	background-image: url('../../../img/main/healthstory_02.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.health a{
+	display: block;
+	width: 100%; height: 100%;
 }
 
 .blue{
@@ -71,35 +92,30 @@
 }
 
 .blue>div{
-	width: 300px; height: 130px;
-	width: 93.75vw; height: 40.625vw;
-	background-color: #333;
-	margin: auto;
+	width: 100%; height: 130px; height: 40.625vw; max-height: 400px;
+	background-image: url('../../../img/main/bluestory_01.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.blue a{
+	display: block;
+	width: 100%; height: 100%;
 }
 
 
 @media screen and (min-width: 640px){
-	.story_area{
-		width: 100%; max-width: 640px;
-		height: auto;
-		margin: auto;
-	}
-	
 	.story_area h3{
 		font-size: 7.975rem;
 	}
 }
 
 @media screen and (min-width: 1024px){
-	.story_area{
-		width: 100%; max-width: 1024px;
-		height: auto;
-		margin: auto;
-	}
 
 	.health>div{
-		float: left;
 		width: 463px; height: 300px;
 		background-color: #333;
 	}
+
 }

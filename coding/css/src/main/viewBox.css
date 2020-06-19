@@ -97,7 +97,7 @@
 		width: 100%; height: 100%;
 	}
 
-	.view_indicator li a:focus{
+	.view_indicator li.action{
 		background-color: #fff;
 	}	
 	
@@ -196,7 +196,7 @@
 		width: 100%; height: 100%;
 	}
 
-	.view_indicator li a:focus{
+	.view_indicator li.action{
 		background-color: #fff;
 	}	
 }
