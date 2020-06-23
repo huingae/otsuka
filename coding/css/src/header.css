@@ -63,6 +63,15 @@ h1 a{
 		float: right;
 		margin-right: 5px;
 	}
+
+	.mob a{
+		display: block;
+		width: 100%; height: 100%;
+	}
+
+	.mob a.action{
+		color: #00a0c2;
+	}
 }
 
 

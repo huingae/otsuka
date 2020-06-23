@@ -7,10 +7,18 @@
 	var footBox = $('#footBox');
 	footBox.load('./footer.html');
 
+
 	// =============================================
 	// 슬라이드배너
+	
+	var win = $(window);
+	var winH = win.height();
+
 	var timed = 1000;
 	var viewBox = $('#viewBox');
+	
+
+
 	var viewArea = viewBox.children('.view_area');
 	var viewLi = viewArea.children('div');
 
@@ -42,7 +50,12 @@
 		};
 	
 		setInterval(function(){	MyProSlide();	}, timed*3);
-
+  // h길이 설정
+		viewBox.height(winH);
+		win.risize(function(){
+			viewBox.height(winH);
+		})
 	// ====================================================
+
 
 })(jQuery);

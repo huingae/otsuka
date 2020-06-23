@@ -13,6 +13,7 @@
 }
 
 .brand_area{
+	position: relative;
 	width: 100%; height: auto;
 	margin: auto;
 
@@ -39,12 +40,21 @@
 	text-transform: uppercase;
 }
 
+
+
 .brand_content{
-	position: relative;
 	width: 100%; height: 100%;
 	min-height: 300px;
 	max-height: 500px;
 	background-color: #fff;
+	overflow: hidden;
+}
+
+.brand_container{width: 400%; height: 100%; }
+
+.brand{
+	float: left;
+	width: 25%; height: 100%;
 	padding: 50px 30px; box-sizing: border-box;
 }
 
@@ -60,7 +70,7 @@
 }
 
 .brand_content img{
-	position: absolute; bottom:-50px; right: -20px; z-index: 5;
+	position: absolute; bottom:-30px; right: -20px; z-index: 5;
 	width: 200px;
 }
 
@@ -97,6 +107,7 @@
 
 @media screen and (min-width: 1024px){
 	.brand_area{
+		position: relative;
 		width: 100%; max-width: 1024px;
 		height: auto;
 		margin: auto;
@@ -106,12 +117,11 @@
 
 	
 	.brand_content{
-		position: relative;
 		width: 100%; height: 100%;
 		min-height: 300px;
 		max-height: 500px;
 		background-color: #fff;
-		padding: 70px 50px; box-sizing: border-box;
+		overflow: hidden;
 	}
 	
 	.brand_content em{
