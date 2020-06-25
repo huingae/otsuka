@@ -7,6 +7,7 @@
 	var footBox = $('#footBox');
 	footBox.load('./footer.html');
 
+	var conBox = $('#conBox');
 
 	// =============================================
 	// 슬라이드배너
@@ -56,6 +57,11 @@
 			viewBox.height(winH);
 		})
 	// ====================================================
+	// 회사소개영역
+	// 마우스 올리면 그림 줌인
+	var conContent = $('.con_content');
+	var conLi = conContent.find('li');
+	var conLink = conLi.children('a');
 
 
 })(jQuery);

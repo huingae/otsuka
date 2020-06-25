@@ -14,8 +14,42 @@
 }
 
 .info_area h3{
+	float: left;
+	position: relative;
 	width: 20%; height: 100%;
 	padding: 1rem; box-sizing: border-box;
 	text-transform: capitalize;
 	border-right: 1px solid #c9c9c9;
+}
+.info_area h3 span{
+	position: absolute;
+	top: 50%; left: 50%; transform: translate(-50%, -50%);
+	width: 100%; 
+}
+
+.info_text_area{
+	float: left;
+	position: relative;
+	width: 75%; height: 100%;
+}
+
+.info_text{
+	position: absolute;
+	top: 50%; left: 50%; transform: translate(-50%, -50%);
+	width: 100%; 
+}
+
+.info_btn{
+	float: right;
+	width: 5%; height: 100%;
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	box-sizing: border-box;
+}
+
+.info_btn button{
+	width: 100%; height: 50%;
+	background-color: #fff;
+	border-bottom: 1px solid #c9c9c9;
+	box-sizing: border-box;
 }

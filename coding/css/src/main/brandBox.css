@@ -3,13 +3,9 @@
 
 #brandBox{
 	position: relative;
-	width: 100%; height:100%;
-	height: 187.5vw;
-	min-height: 600px;
-	max-height: 900px;
+	width: 100%; height:auto;
 	background-image: linear-gradient(#91BACE, #D2C7C3);	
-	padding: 60px 10px 20px 10px; 
-	padding: 60px 10px 20px 10px; 
+	padding: 100px 10px; 
 	box-sizing: border-box;
 }
 

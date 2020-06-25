@@ -12,7 +12,7 @@
 	z-index:  0;
 	bottom: 0;
 	width: 100%; height: 50%;
-		background-image: linear-gradient( #c3e8ed,#91BACE);	
+		background-image: linear-gradient( #cdf1f8,#a1c6e9);	
 }
 
 .service_area{
@@ -21,6 +21,21 @@
 	top: 0; left: 0; bottom: 0; right: 0;
 	margin: auto;
 	padding: 10px; box-sizing: border-box;
+}
+
+.service_area button{
+	margin-top: 40px;
+	width: 100px; height: 40px;
+	 background-color: #333;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+.service_area button:focus{
+	font-weight: 700;
+	background-color: #00a0c2;
 }
 
 .service_area h3{
@@ -58,5 +73,13 @@
 	}
 	.service_area img{
 		width: 400px;
+	}
+	.service_area button{
+		margin-top: 40px;
+		width: 140px; height:50px;
+		background-color: #333;
+		color: #fff;
+		border-radius: 50px;
+		font-size: 1rem;
 	}
 }

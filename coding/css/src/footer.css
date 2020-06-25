@@ -1,14 +1,134 @@
 /* footer.css */
 
 #footBox{
-	width: 100%; height: 400px;
+	width: 100%; height: auto;
 	background-color: #fff;
+	color: #696969;
+
 }
 
 .foot_area{
+	position: relative;
 	width: 100%; height: 100%;
 	max-width: 1024px;
 	margin: auto;
-	background-color: #333;
+	padding-bottom:50px;
+}
+
+.family_box{
+	width: 100%; height: 80px;
+	padding: 20px 10px; box-sizing: border-box;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.family_area{
+	position: relative;
+	width: 60%; height: 100%;
+	border: 2px solid #cfcfcf;
+	border-radius: 2rem;
+	padding: 5px; box-sizing: border-box;
+}
+
+.f_menu{
+	width: 100%; height: auto;
+	padding:20px 10px; box-sizing: border-box;
+}
+
+.f_menu ul{
+	width: 100%; height: auto;
+}
+
+
+
+.f_menu li a{
+	display: block;
+	width: 100%; height: 100%;
+}
+
+.sns{
+	width: 50%; max-width: 280px;
+	height: auto;
+	font-size: 2.5rem;
+	padding: 50px 10px 0 10px; box-sizing: border-box;
+}
+
+.sns ul{
+	width: 100%; height: 100%;
+}
+
+.sns li{
+	width: 25%;
+	float: left;
+}
+
+
+.com_info{
+	width: 100%; height: auto;
+	padding-top:10px; box-sizing: border-box;
+	color: #999;
+}
+
+.info_box{
+	float: left;
+}
+
+.top_btn{
+	position: absolute; bottom: 10px; right: 0;
+	width: auto; height: auto;
+}
+
+.top_btn button{
+	width: 100%; height: 100%;
+	font-size: 3rem;
+	color:#696969;
+}
+
+@media screen and (max-width: 1023px){
+
+	.f_menu li{
+		width: 100%; height: auto; 
+		font-size: 1.3rem;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	
+	.sns{
+		padding: 20px 10px 0 10px; box-sizing: border-box;
+	}
+
+	.info_box{
+		padding: 0 10px; box-sizing: border-box;
+	}
+
+}
+
+
+@media screen and (min-width: 1024px){
+
+	.f_menu li{
+		float: left;
+		width: 20%; text-align: center;
+		font-weight: bold; font-size: 1.1rem;
+		border-right: 1px solid #cfcfcf; box-sizing: border-box;
+	}
+	
+	.f_menu li:last-child{
+		border-right: 0;
+	}
+
+	.info_box p{
+		float: left;
+		border-right: 1px solid #cfcfcf;
+		padding:0 5px; box-sizing: border-box;
+	}
+	.info_box p:last-child{
+		border-right: 0;
+	}
+
+	.top_btn{
+		position: absolute; bottom: 30px; right: 0;
+		width: auto; height: auto;
+	}
 }
 /* 푸터 영역 */
