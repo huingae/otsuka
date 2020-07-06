@@ -1,5 +1,6 @@
-// brand.js
-// 제품소개페이지 
+// community.js
+// 홍보자료 페이지
+
 (function($){
 
 	var headBox = $('#headBox');
