@@ -68,6 +68,7 @@
 
 .list_area{
 	width: 100%; height: auto;
+	color: #fff;
 }
 
 .list_area div{
@@ -79,6 +80,9 @@
 	background-color: #333333;
 	margin-bottom:10px;
 	margin-right: 5%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover;
 }
 
 .list_area div:last-child{
@@ -87,8 +91,8 @@
 
 
 
-.list_02{
- margin-top: 30px;
+.list_area .little_list:nth-child(2){
+	margin-top: 30px;
 }
 
 

@@ -17,7 +17,7 @@
 	// 												<div class="list_02 little_list"></div>\
 	// 												<div class="list_03 little_list"></div>\
 	// 												</div>';
-	var galleryListcode = '	<div class="little_list"></div><div class="little_list"></div><div class="little_list"></div>';
+	var galleryListcode = '<div class="list_area clearfix"><div class="little_list"></div><div class="little_list"></div><div class="little_list"></div></div>';
 
 	var moreBtn = $('.more').children('button');
 
@@ -32,7 +32,7 @@
 		console.log(myData);
 
 		var loadData = function(n){
-			var viewN = n | 3;
+			var viewN = n || 1;
 			var plusList = i + viewN;
 			for(; i < plusList; i++){
 			gallery.append(galleryListcode);
@@ -41,11 +41,10 @@
 			list = $('.little_list').eq(i);
 			// console.log(i);
 			list.text(myData[i].name);
-			list.addClass('list_' + (i+1));
-			list.css({color:"#555", fontSize:'2rem', border:'1px solid #333', marginBottom:'1rem'});
+			list.css({backgroundImage:'url(../img/sub_pg/ad/'+ myData[i].link +'.jpg)'})
 		}
 	}
-	loadData(6);
+	loadData(2);
 	
 	moreBtn.on('click',function(){
 		// gallery.append(galleryListcode);
