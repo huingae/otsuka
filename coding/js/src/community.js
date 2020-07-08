@@ -36,12 +36,17 @@
 			var plusList = i + viewN;
 			for(; i < plusList; i++){
 			gallery.append(galleryListcode);
-			listArea = gallery.children('.list_area').eq(-1);
+			listArea = gallery.children('.list_area').eq(i);
 			// list = listArea.find('div');
-			list = $('.little_list').eq(i);
-			// console.log(i);
-			list.text(myData[i].name);
-			list.css({backgroundImage:'url(../img/sub_pg/ad/'+ myData[i].link +'.jpg)'})
+				for(var j=0; j<3; j++){
+					list = listArea.find('.little_list').eq(j);
+					list.text(myData[i][j].name);
+					list.css({backgroundImage:'url(../img/sub_pg/ad/'+ myData[i][j].link +'.jpg)'})
+					console.log(i,j);
+				}			
+				}
+				if(i >= myData.length){
+					moreBtn.hide();
 		}
 	}
 	loadData(2);
