@@ -84,7 +84,7 @@
 	color: #fff;
 	border-radius: 50px;
 }
-
+.brand button:hover,
 .brand button:focus{
 	font-weight: 700;
 	background-color: #00a0c2;

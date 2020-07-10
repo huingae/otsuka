@@ -62,27 +62,29 @@
 		font-weight: 900;
 	}
 	
-	
 	.view_indicator{
 		position: absolute; z-index: 10;
 		bottom: 20%; left: 0; right: 0; margin:auto;
-		width: 100%; height:0;
-		background-color: #fff;
+		width: 100%; height:auto;
 	}
 	
+	.indi_area{
+		width: 200px; height: auto;
+		margin:auto;
+	}
+
 	.view_indicator ul {
-		width: 200px; 
-		margin: auto;
-		padding:0 50px; box-sizing: border-box;
+		float: left;
+		width: 150px; height: auto;
+		padding:1px 20px; box-sizing: border-box;
 	}
 	
 	.view_indicator li{
-		position: relative;
 		float: left;
 		width: 20px; height: 20px;
 		border-radius: 100%;
 		margin-right: 20px;
-		border: 3px solid #fff; box-sizing: border-box;
+		border: 2px solid #fff; box-sizing: border-box;
 	}
 	
 	.view_indicator li:last-child{
@@ -98,6 +100,18 @@
 	.view_indicator li.action{
 		background-color: #fff;
 	}	
+	.view_btn{
+		float: right;
+		width: 50px; height: 100%;
+		color:#fff;
+		font-size:1.25rem;
+	}
+	.view_btn a{
+		float: left;
+		display: block;
+		width: auto; height:auto;
+		margin-left: 4px;
+	}
 	
 }
 
@@ -165,23 +179,26 @@
 	.view_indicator{
 		position: absolute; z-index: 10;
 		bottom: 20%; left: 0; right: 0; margin:auto;
-		width: 100%; height:0;
-		background-color: #fff;
+		width: 100%; height:auto;
 	}
 	
+	.indi_area{
+		width: 200px; height: auto;
+		margin:auto;
+	}
+
 	.view_indicator ul {
-		width: 200px; 
-		margin: auto;
-		padding:0 50px; box-sizing: border-box;
+		float: left;
+		width: 150px; height: auto;
+		padding:1px 20px; box-sizing: border-box;
 	}
 	
 	.view_indicator li{
-		position: relative;
 		float: left;
 		width: 20px; height: 20px;
 		border-radius: 100%;
 		margin-right: 20px;
-		border: 3px solid #fff; box-sizing: border-box;
+		border: 2px solid #fff; box-sizing: border-box;
 	}
 	
 	.view_indicator li:last-child{
@@ -197,4 +214,16 @@
 	.view_indicator li.action{
 		background-color: #fff;
 	}	
+	.view_btn{
+		float: right;
+		width: 50px; height: 100%;
+		color:#fff;
+		font-size:1.25rem;
+	}
+	.view_btn a{
+		float: left;
+		display: block;
+		width: auto; height:auto;
+		margin-left: 4px;
+	}
 }

@@ -21,6 +21,7 @@
 
 
 	var viewArea = viewBox.children('.view_area');
+	viewArea.css({marginLeft:0});
 	var viewLi = viewArea.children('div');
 
 	var indicator = $('.view_indicator')
@@ -37,29 +38,61 @@
 	viewArea.css({'width': viewLen * 100 + '%','position':'relative','left':-100 + '%'	});
 	viewLi.css({width: 100 / viewLen + '%' });
 	
-		var i = 0;
+		var slideI = 0;
 		var MyProSlide = function(){
-			i += 1;
-			var iPer = -i * 100;
+			slideI += 1;
+			var iPer = -slideI * 100;
 			viewArea.stop().animate({'marginLeft': iPer +'%'}, timed, function(){
-				if( i >= viewLen-2 ){
-					viewArea.css({'marginLeft': 100 + '%'});	i = -1;	}
+				if( slideI >= viewLen-2 ){
+					viewArea.css({'marginLeft': 100 + '%'});	slideI = -1;	}
 				//인디케이터 
-				indiLi.eq(i).addClass('action');
-				indiLi.eq(i).siblings('li').removeClass('action');
+				indiLi.eq(slideI).addClass('action');
+				indiLi.eq(slideI).siblings('li').removeClass('action');
 			});
+			console.log('!!')
 		};
 	
 		setInterval(function(){	MyProSlide();	}, timed*3);
   // h길이 설정
 		viewBox.height(winH);
-		win.risize(function(){
-			viewBox.height(winH);
-		})
+		// win.resize(function(){
+		// 	viewBox.height(winH);
+		// })
 	// ====================================================
 	//conBox
 	//글씨 fadein
+	var moveFade = $('.fade');
+	var i = 0;
+	
+	var	fadeObject = [];
 
+	for(; i < moveFade.length; i++){
+		fadeObject[i] = moveFade.eq(i).offset().top - winH/2;
+	};
+	// console.log(fadeObject);
+	
+	win.on('scroll',function(){
+		var st = win.scrollTop();
+		// console.log(st, fadeObject[0])
+		for(var j=0; j <= fadeObject.length; j+=1){
+			if(st > fadeObject[j]){
+				moveFade.eq(j).animate({'opacity':1}, 400)
+			}
+		}
+
+		
+		// console.log(bottom_of_object);
+		// moveFade.each(function(){
+		// 		// var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+		// 		// console.log(bottom_of_object)
+		// 		// var bottom_of_window = $(window).scrollTop() + $(window).height();
+		// 		if( bottom_of_window > bottom_of_object/2 ){
+		// 			$(this).animate({'opacity':'1'},1000);}
+		// 		})
+		})
+
+		
+		
 
 
 
