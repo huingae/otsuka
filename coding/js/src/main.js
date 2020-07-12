@@ -67,7 +67,7 @@
 	var	fadeObject = [];
 
 	for(; i < moveFade.length; i++){
-		fadeObject[i] = moveFade.eq(i).offset().top - winH/2;
+		fadeObject[i] = moveFade.eq(i).offset().top - winH/1.5;
 	};
 	// console.log(fadeObject);
 	
@@ -80,18 +80,10 @@
 			}
 		}
 
-		
-		// console.log(bottom_of_object);
-		// moveFade.each(function(){
-		// 		// var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-		// 		// console.log(bottom_of_object)
-		// 		// var bottom_of_window = $(window).scrollTop() + $(window).height();
-		// 		if( bottom_of_window > bottom_of_object/2 ){
-		// 			$(this).animate({'opacity':'1'},1000);}
-		// 		})
 		})
 
-		
+	// ----------------------------
+	
 		
 
 
