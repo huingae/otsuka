@@ -53,6 +53,7 @@
 
 .sub_menu_box li.action{
 	font-weight: bold;
+	color:#00a0c2;
 }
 @media screen and (min-width: 1024px){
 	#viewBox{

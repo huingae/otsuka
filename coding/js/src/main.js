@@ -81,6 +81,28 @@
 		}
 
 		})
+	
+		// ----------------------------------------------
+		var infoBox = $('#infoBox');
+		var infoPrev = $('.info_prev');
+		var infoNext = $('.info_next');
+		var infoText = $('.info_text').find('a');
+
+		$.ajax({
+			url:"../data/info.json",
+		}).done(function(jsonResult){
+			var i = 0;
+			var myData = jsonResult;
+			console.log(myData);
+			infoText.text(myData[0].name)
+			infoNext.on('click',function(e){
+				e.preventDefault();
+				for(; i<myData.length; i++){
+					infoText.text(myData[i].name)
+				}
+			});
+
+		})
 
 	// ----------------------------
 	
